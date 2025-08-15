@@ -1,10 +1,13 @@
-// app/page.tsx
-import JoinForm from '../components/form-card'
+import HeroSection from "@/components/hero-section"
+import ValuesSection from "@/components/values-section"
+import NewsSection from "@/components/news-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <JoinForm />
-    </main>
+    <>
+      <HeroSection />
+      <ValuesSection />
+      <NewsSection />
+    </>
   )
 }
