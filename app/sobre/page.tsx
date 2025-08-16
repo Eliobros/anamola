@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function SobrePage() {
   return (
     <div className="min-h-screen bg-white">
@@ -37,24 +39,42 @@ export default function SobrePage() {
             </div>
           </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+              <p>
+                O partido de Venâncio Mondlane <strong>"ANAMOLA"</strong>, que significa 
+                <strong> Aliança Nacional para um Moçambique Livre e Autónomo</strong>, 
+                foi aprovado pelo Ministério da Justiça, Assuntos Constitucionais e Religiosos de Moçambique.
+              </p>
+
+              <p>
+                A notícia foi avançada, na manhã desta sexta-feira (15.08), por Dinis Tivane, 
+                assessor do político e ex-candidato presidencial, na sua página do Facebook.
+              </p>
+
+              <blockquote className="bg-blue-50 border-l-4 border-blue-600 p-6 italic text-lg">
+                "Irmãos, é oficial! Agora é ANAMOLA. Recebi, faz uns minutos, uma chamada do nosso advogado, 
+                o ilustre Dr. Mutola. Ele disse: Dinis, nosso partido está, finalmente, aprovado. 
+                Agora é ANAMOLA. Festejemos o início formal da revolução moçambicana"
+              </blockquote>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md">
+                <Image
+                  src="/anamola.jpg"
+                  alt="ANAMOLA - Partido Político"
+                  width={400}
+                  height={300}
+                  className="rounded-lg shadow-lg"
+                  priority
+                />
+                <div className="absolute inset-0 bg-blue-600 bg-opacity-20 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              O partido de Venâncio Mondlane <strong>"ANAMOLA"</strong>, que significa 
-              <strong> Aliança Nacional para um Moçambique Livre e Autónomo</strong>, 
-              foi aprovado pelo Ministério da Justiça, Assuntos Constitucionais e Religiosos de Moçambique.
-            </p>
-
-            <p>
-              A notícia foi avançada, na manhã desta sexta-feira (15.08), por Dinis Tivane, 
-              assessor do político e ex-candidato presidencial, na sua página do Facebook.
-            </p>
-
-            <blockquote className="bg-blue-50 border-l-4 border-blue-600 p-6 italic text-lg">
-              "Irmãos, é oficial! Agora é ANAMOLA. Recebi, faz uns minutos, uma chamada do nosso advogado, 
-              o ilustre Dr. Mutola. Ele disse: Dinis, nosso partido está, finalmente, aprovado. 
-              Agora é ANAMOLA. Festejemos o início formal da revolução moçambicana"
-            </blockquote>
-
             <p>
               Venâncio Mondlane havia submetido, a 6 de junho, no Ministério da Justiça, 
               Assuntos Constitucionais e Religiosos, um recurso com as respostas das exigências do Governo, 
